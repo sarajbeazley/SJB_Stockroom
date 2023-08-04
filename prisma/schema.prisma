@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Collections {
+  id                Int      @id @default(autoincrement())
+  name              String   @unique
+  artworks          Artwork[]
+}
+
+model Artwork {
+  id          Int        @id @default(autoincrement())
+  title       String      
+  date        Int?
+  size        String?
+  medium      String?
+  price       String?
+  description String?
+  imageUrl    String?
+  collection  Collections @relation(fields: [collectionId], references: [id])
+  collectionId Int
+}
