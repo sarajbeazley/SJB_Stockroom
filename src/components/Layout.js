@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
 export default function Layout({ children }) {
+
   return (
     <div className="layout">
       <img
         className="logo"
-        src="https://images.squarespace-cdn.com/content/v1/58f8b9709f74561265f1ab63/1492715033803-YFJ4A15FH5Y5HSEWWQ3G/SJB+signature+clear.png?format=750w"
+        src="/assets/images/sjb_stockroom_logo.png"
         alt="sjb-logo"
       />
       <nav className="nav-bar">
@@ -50,7 +51,9 @@ export default function Layout({ children }) {
           </p>
           </div>
           <div className="admin-login-container">
-          <button className="admin-login-button">Admin Login</button>
+          <Link to="/admin" className="admin-login-link">
+            <button className="admin-login-button">Admin Login</button>
+          </Link>
         </div>
         <small className="full-width">
           2023 SaraJBeazley All rights reserved. Registered in England
