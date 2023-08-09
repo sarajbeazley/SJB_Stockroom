@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require ("express");
 const { createArtwork, getAllArtwork, getArtworkById,deleteArtworkById, updateArtwork } = require("../controllers/artwork.js")
 
 

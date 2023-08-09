@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 
-import { useState } from "react"
+import { useState } from "react";
 
 import Layout from "./components/Layout";
 import LandingPage from "./components/LandingPage";
@@ -76,8 +76,6 @@ function App() {
     },
   ];
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
   return (
     <div>
       <Layout>
@@ -88,13 +86,8 @@ function App() {
             path="/collections/:artworkId"
             element={<SingleImage collectionsData={collectionsData} />}
           />
-         <Route path="/admin"
-           element= {!isLoggedIn ? (
-              <LoginPage setIsLoggedIn={setIsLoggedIn} />
-            ) : (
-              <AdminDashboard />
-            )}
-          />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </Layout>
     </div>

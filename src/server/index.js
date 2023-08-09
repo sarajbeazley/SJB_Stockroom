@@ -23,8 +23,11 @@ app.use('/collections', collectionsRouter);
 const artworkRouter = require('./routers/artwork');
 app.use('/artwork', artworkRouter);
 
+const loginRouter = require('./controllers/auth');
+app.use('/login', loginRouter);
 
-
+const adminRouter = require('./controllers/auth');
+app.use('/admin', adminRouter);
 
 // Set up a default "catch all" route to use when someone visits a route
 // that we haven't built

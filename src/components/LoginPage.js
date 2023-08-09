@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function LoginPage({ setIsLoggedIn }) {
+export default function LoginPage() {
   const [username, setUsername] = useState(" ");
   const [password, setPassword] = useState(" ");
 
@@ -18,15 +18,26 @@ export default function LoginPage({ setIsLoggedIn }) {
 
     console.log (username, password)
 
+    // const loginData = { username, password }
+    // data ready to be sent to server
+
     const mockUsername = "sarajbeazley";
     const mockPassword = "stockroom21";
 
     if (username === mockUsername && password === mockPassword) {
-      setIsLoggedIn(true);
+     console.log("log in succesful")
     } else {
       console.log("Login failed. Invalid credentials.");
     }
+
+    // fetch request to send loginData to server
+    // add post request
+
+    // redirect hook should be the last thing i do here
+
   }
+
+  
 
   return (
     <div className="page">
