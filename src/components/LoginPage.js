@@ -1,8 +1,16 @@
 import { useState } from "react";
 
+
+const apiUrl = "http://localhost:4000";
+
 export default function LoginPage() {
-  const [username, setUsername] = useState(" ");
-  const [password, setPassword] = useState(" ");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+
+
+  const mockUsername = "sarajbeazley";
+  const mockPassword = "stockroom21";
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -16,32 +24,43 @@ export default function LoginPage() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log (username, password)
+    console.log(username, password);
+    console.log(mockUsername, mockPassword);
 
-    // const loginData = { username, password }
-    // data ready to be sent to server
-
-    const mockUsername = "sarajbeazley";
-    const mockPassword = "stockroom21";
-
-    if (username === mockUsername && password === mockPassword) {
-     console.log("log in succesful")
+    if (username !== mockUsername || password !== mockPassword) {
+     console.log("Login failed. Invalid credentials.");
     } else {
-      console.log("Login failed. Invalid credentials.");
+     console.log("Login successful");
+
+     fetch(`${apiUrl}/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: username,
+        password: password,
+      }),
+    })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log("Authentication token:", data.token); // Display the token in the console
+      localStorage.setItem("authToken", data.token);
+    });
+    console.log("Authentication token:", localStorage.getItem("authToken"));
+
+      // redirect hook should be the last thing i do here
     }
-
-    // fetch request to send loginData to server
-    // add post request
-
-    // redirect hook should be the last thing i do here
-
   }
-
-  
 
   return (
     <div className="page">
-      <h1>Hello Sara! To access the admin dashboard, please enter your details below</h1>
+      <h1>
+        Hello Sara! To access the admin dashboard, please enter your details
+        below
+      </h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input-container">
           <p>Username</p>
@@ -68,6 +87,7 @@ export default function LoginPage() {
         <button className="admin-sign-button" type="submit">
           Sign In
         </button>
+     
       </form>
     </div>
   );

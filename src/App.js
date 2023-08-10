@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
 
-import { useState } from "react";
 
 import Layout from "./components/Layout";
 import LandingPage from "./components/LandingPage";
@@ -76,6 +75,10 @@ function App() {
     },
   ];
 
+  const token = localStorage.getItem("authToken");
+
+ 
+
   return (
     <div>
       <Layout>
@@ -87,7 +90,10 @@ function App() {
             element={<SingleImage collectionsData={collectionsData} />}
           />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/admin" element={<AdminDashboard />} />
+          <Route
+            path="/admin"
+            element={!token ? <LoginPage /> : <AdminDashboard />}
+          />
         </Routes>
       </Layout>
     </div>

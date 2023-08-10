@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
 export default function Layout({ children }) {
-
   return (
     <div className="layout">
-      <img
-        className="logo"
-        src="/assets/images/sjb_stockroom_logo.png"
-        alt="sjb-logo"
-      />
+      <a href="https://www.sarajbeazley.com/" target="_blank">
+        <img
+          className="logo"
+          src="/assets/images/sjb_stockroom_logo.png"
+          alt="sjb-logo"
+        />
+      </a>
       <nav className="nav-bar">
         <div className="nav-links">
           <h2>Collections</h2>
@@ -19,6 +20,9 @@ export default function Layout({ children }) {
           </p>
           <p>
             <b>Cityscapes</b>
+          </p>
+          <p>
+            <b>Figurative</b>
           </p>
           <p>
             <b>Interiors</b>
@@ -49,8 +53,8 @@ export default function Layout({ children }) {
           <p className="item">
             <b>Contact</b>
           </p>
-          </div>
-          <div className="admin-login-container">
+        </div>
+        <div className="admin-login-container">
           <Link to="/admin" className="admin-login-link">
             <button className="admin-login-button">Admin Login</button>
           </Link>
