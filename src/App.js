@@ -77,8 +77,6 @@ function App() {
 
   const token = localStorage.getItem("authToken");
 
- 
-
   return (
     <div>
       <Layout>

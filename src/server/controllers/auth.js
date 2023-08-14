@@ -2,14 +2,10 @@
 const jwt = require("jsonwebtoken");
 const secret = process.env.JWT_SECRET;
 
-
-
 const mockUser = {
   username: "sarajbeazley",
   password: "stockroom21",
 };
-
-
 
 const login = (req, res) => {
   const { username, password } = req.body;
@@ -18,8 +14,8 @@ const login = (req, res) => {
   
     return res.status(401).json({ status: "error", message: "Invalid username or password" });
   }
+  
 try {
-
   const payload = { username }
   const token = jwt.sign(payload, secret)
   console.log(token)

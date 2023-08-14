@@ -1,13 +1,10 @@
 import { useState } from "react";
 
-
 const apiUrl = "http://localhost:4000";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
-
 
   const mockUsername = "sarajbeazley";
   const mockPassword = "stockroom21";
@@ -28,28 +25,29 @@ export default function LoginPage() {
     console.log(mockUsername, mockPassword);
 
     if (username !== mockUsername || password !== mockPassword) {
-     console.log("Login failed. Invalid credentials.");
+      console.log("Login failed. Invalid credentials.");
     } else {
-     console.log("Login successful");
+      console.log("Login successful");
 
-     fetch(`${apiUrl}/login`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: username,
-        password: password,
-      }),
-    })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log("Authentication token:", data.token); // Display the token in the console
-      localStorage.setItem("authToken", data.token);
-    });
-    console.log("Authentication token:", localStorage.getItem("authToken"));
+      fetch(`${apiUrl}/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username: username,
+          password: password,
+        }),
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          console.log("Authentication token:", data.token); // Display the token in the console
+          localStorage.setItem("authToken", data.token);
+        
+        });
+      console.log("Authentication token:", localStorage.getItem("authToken"));
 
       // redirect hook should be the last thing i do here
     }
@@ -87,7 +85,6 @@ export default function LoginPage() {
         <button className="admin-sign-button" type="submit">
           Sign In
         </button>
-     
       </form>
     </div>
   );

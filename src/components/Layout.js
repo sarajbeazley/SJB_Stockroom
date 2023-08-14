@@ -54,11 +54,6 @@ export default function Layout({ children }) {
             <b>Contact</b>
           </p>
         </div>
-        <div className="admin-login-container">
-          <Link to="/admin" className="admin-login-link">
-            <button className="admin-login-button">Admin Login</button>
-          </Link>
-        </div>
         <small className="full-width">
           2023 SaraJBeazley All rights reserved. Registered in England
           No.210580. Address 286 Kilburn Lane, London W10 4BW, England.
