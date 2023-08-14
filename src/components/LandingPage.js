@@ -20,7 +20,7 @@ export default function LandingPage() {
       <img
           className="collection-image"
           src="/assets/images/cityscapes/Abbey Rd VIII fr.jpg"
-          alt="abbey-road-VIII"
+          alt="abbey_road_VIII"
         />
         <h2>Cityscapes</h2>
         </div>
@@ -31,6 +31,30 @@ export default function LandingPage() {
           alt="figurative"
         />
         <h2>Figurative</h2>
+        </div>
+        <div className="home-collection-item">
+      <img
+          className="collection-image"
+          src="/assets/images/interiors/Chandelier I fr.jpg"
+          alt="chandelier_I"
+        />
+        <h2>Interiors</h2>
+        </div>
+        <div className="home-collection-item">
+      <img
+          className="collection-image"
+          src="/assets/images/fashion/corset.png"
+          alt="fashion"
+        />
+        <h2>Figurative</h2>
+        </div>
+        <div className="home-collection-item">
+      <img
+          className="collection-image"
+          src="/assets/images/landscapes/Small Steps VIIII fr.jpg"
+          alt="small_steps_VIIII"
+        />
+        <h2>Landscapes</h2>
         </div>
     </div>
     </div>
