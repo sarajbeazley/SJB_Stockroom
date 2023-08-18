@@ -66,6 +66,14 @@ text-decoration: none;
   padding: 20px;
 }
 
+.intro-text{
+  font-size: 35px
+}
+
+.collections-title{
+  font-size: 45px
+}
+
 .collections-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

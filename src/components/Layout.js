@@ -12,26 +12,26 @@ export default function Layout({ children }) {
       </a>
       <nav className="nav-bar">
         <div className="nav-links">
-          <h2>Collections</h2>
+          
           <p>
             <Link className="link-text" to="/collections">
-              <b>Architectural</b>
+              <p>Architectural</p>
             </Link>
           </p>
           <p>
-            <b>Cityscapes</b>
+            <p>Cityscapes</p>
           </p>
           <p>
-            <b>Figurative</b>
+            <p>Figurative</p>
           </p>
           <p>
-            <b>Interiors</b>
+            <p>Interiors</p>
           </p>
           <p>
-            <b>Fashion</b>
+            <p>Fashion</p>
           </p>
           <p>
-            <b>Landscapes</b>
+            <p>Landscapes</p>
           </p>
         </div>
       </nav>
