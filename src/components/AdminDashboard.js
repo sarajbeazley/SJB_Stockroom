@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useDropzone } from "react-dropzone";
+
 
 export default function AdminDashboard() {
   const [formData, setFormData] = useState({
@@ -6,10 +8,13 @@ export default function AdminDashboard() {
     year:"",
     medium:"",
     dimensions:"",
+    price:"",
     isSold: true,
   });
 
   console.log(formData);
+
+  const [uploadedImage, setUploadedImage] = useState(null);
 
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
@@ -21,10 +26,35 @@ export default function AdminDashboard() {
     });
   }
 
+  function handleImageDrop(acceptedFiles) {
+    setUploadedImage(acceptedFiles[0]);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    console.log("Form Data", formData);
+    console.log("Uploaded Image", uploadedImage);
+    //send data to server - need to do this
+
+  // Reset form data
+  setFormData({
+    title: "",
+    year: "",
+    medium: "",
+    dimensions: "",
+    price: "",
+    isSold: false,
+  });
+  
+  // Reset uploaded image
+  setUploadedImage(null);
+
   }
+
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+    onDrop: handleImageDrop,
+    accept: "image/*", // Accept only image files
+  });
 
   return (
     <div>
@@ -64,11 +94,21 @@ export default function AdminDashboard() {
           <div className="input-info">
             <p>Dimensions*</p>
           <input
-            type="number"
+            type="text"
             className="text-box"
             onChange={handleChange}
             name="dimensions"
             value={formData.dimensions}
+          />
+          </div>
+          <div className="input-info">
+            <p>Price*</p>
+          <input
+            type="text"
+            className="text-box"
+            onChange={handleChange}
+            name="price"
+            value={formData.price}
           />
           </div>
           <div className="input-info">
@@ -84,6 +124,21 @@ export default function AdminDashboard() {
           />
           </label>
           </div>
+        
+          <div className="input-info">
+            <p>Upload Artwork Image</p>
+            <div className={`drop-zone ${isDragActive ? "drag-active" : ""}`} {...getRootProps()}>
+              <input {...getInputProps()} />
+              {uploadedImage ? (
+                <img src={URL.createObjectURL(uploadedImage)} alt="Uploaded" className="uploaded-image" />
+              ) : isDragActive ? (
+                <p>Drop the image here...</p>
+              ) : (
+                <p>Drag &amp; drop an image here, or click to select one</p>
+              )}
+            </div>
+          </div>
+        
           <button className="admin-sign-button" type="submit">
           Upload
         </button>

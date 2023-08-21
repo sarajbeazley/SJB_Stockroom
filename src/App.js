@@ -9,6 +9,7 @@ import SingleImage from "./components/SingleImage";
 import LoginPage from "./components/LoginPage";
 import AdminDashboard from "./components/AdminDashboard";
 
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -90,8 +91,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route
             path="/admin"
-            element={!token ? <LoginPage /> : <AdminDashboard />}
-          />
+            element={!token ? <LoginPage /> : <AdminDashboard /> }
+            />
         </Routes>
       </Layout>
     </div>

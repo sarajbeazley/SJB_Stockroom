@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 
 const apiUrl = "http://localhost:4000";
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -11,6 +13,7 @@ export default function LoginPage() {
 
   function handleChange(event) {
     const { name, value } = event.target;
+    console.log(`Input "${name}":`, value);
     if (name === "username") {
       setUsername(value);
     } else if (name === "password") {
@@ -48,6 +51,12 @@ export default function LoginPage() {
         
         });
       console.log("Authentication token:", localStorage.getItem("authToken"));
+
+      navigate('/admin')
+      console.log("Redirecting to admin dashboard...");
+
+      setUsername("");
+      setPassword("");
 
       // redirect hook should be the last thing i do here
     }
