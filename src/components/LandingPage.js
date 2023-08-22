@@ -19,12 +19,14 @@ export default function LandingPage() {
         </Link>
         </div>
         <div className="home-collection-item">
+        <Link className="link-text" to="/collections">  
       <img
           className="collection-image"
           src="/assets/images/cityscapes/Abbey Rd VIII fr.jpg"
           alt="abbey_road_VIII"
         />
         <h2>Cityscapes</h2>
+        </Link>
         </div>
         <div className="home-collection-item">
       <img

@@ -138,7 +138,6 @@ text-decoration: none;
   place-items: center;
   /* margin-bottom: 10px; */
   margin-top: 50px;
-
 }
 
 .item{
@@ -165,6 +164,11 @@ text-decoration: none;
   grid-column: 5;
 }
 
+.admin-title{
+  padding-bottom: 20px;
+  margin-top: 10px
+}
+
 .form{
   display: flex;
   flex-direction: column;
@@ -178,7 +182,7 @@ text-decoration: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
 }
 
 .admin-sign-button{
@@ -191,15 +195,15 @@ text-decoration: none;
 
 .text-box{
   padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
   width: 300px;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px; /* Add some spacing between input sections */
+  margin-bottom: 10px; /* Add some spacing between input sections */
 }
 
 .checkbox-label {

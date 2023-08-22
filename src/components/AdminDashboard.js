@@ -35,16 +35,7 @@ export default function AdminDashboard() {
     event.preventDefault();
     // console.log("Form Data", formData);
     // console.log("Uploaded Image", uploadedImage);
-    //send data to server - need to do this
-
-    // const formData = {
-    //   title: title,
-    //   date: date,
-    //   medium: medium,
-    //   size: size,
-    //   price: price,
-    // }
-
+   
     const requestData = {
       ...formData,
       date: Number(formData.date),
@@ -88,7 +79,7 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <h1>Admin Dashboard</h1>
+      <h1 className="admin-title">Admin Dashboard</h1>
       <container className="admin-form-box">
         <form className="admin-form" onSubmit={handleSubmit}>
           <div className="input-info">

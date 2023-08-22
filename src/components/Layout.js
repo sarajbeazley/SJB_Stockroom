@@ -19,7 +19,9 @@ export default function Layout({ children }) {
             </Link>
           </p>
           <p>
+          <Link className="link-text" to="/collections">
             <p>Cityscapes</p>
+            </Link>
           </p>
           <p>
             <p>Figurative</p>
