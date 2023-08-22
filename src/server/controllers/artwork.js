@@ -5,8 +5,7 @@ const {
 const prisma = new PrismaClient();
 
 const createArtwork = async (req, res) => {
-  const { collectionName, title, date, size, medium, price, imageUrl } =
-    req.body;
+  const { collectionName, title, date, medium, size, price } = req.body;
 
   const collection = await prisma.collections.findUnique({
     where: {
@@ -23,12 +22,13 @@ const createArtwork = async (req, res) => {
       data: {
         title: title,
         date: date,
-        size: size,
         medium: medium,
+        size: size,
         price: price,
-        imageUrl: imageUrl,
+        // imageUrl: imageUrl,
         collectionId: collection.id,
       },
+      // include: { collections : { name: true } }
     });
     console.log(artwork);
     return res.status(201).json({ artwork });
@@ -42,6 +42,13 @@ const createArtwork = async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 };
+
+// const uploadArtworkImage = async (req, res) => {
+//   const { artworkId } = req.params;
+
+//   return res.status(201).json({ message: "Image uploaded successfully" });
+
+// }
 
 const getAllArtwork = async (req, res) => {
   const artwork = await prisma.artwork.findMany({});
@@ -60,30 +67,28 @@ const getArtworkById = async (req, res) => {
   return res.status(200).json({ artwork });
 };
 
-const updateArtwork = async (req,res) => {
+const updateArtwork = async (req, res) => {
   const { artworkId } = req.params;
-  const { title, date, size, medium, price, imageUrl } =
-  req.body;
+  const { title, date, medium, size, price, imageUrl } = req.body;
 
-  const updatedArtwork = await prisma.customer.update({
+  const updatedArtwork = await prisma.artwork.update({
     where: {
       id: Number(artworkId),
     },
     data: {
       title: title,
       date: date,
-      size: size,
       medium: medium,
+      size: size,
       price: price,
       imageUrl: imageUrl,
     },
-     
-  })
+  });
   return res.status(201).json({ artwork: updatedArtwork });
-}
+};
 
 const deleteArtworkById = async (req, res) => {
-  const id  = req.params.artworkId;
+  const id = req.params.artworkId;
 
   const artwork = await prisma.artwork.delete({
     where: {
@@ -95,5 +100,10 @@ const deleteArtworkById = async (req, res) => {
 
 // updateArtwork '/artwork/:artworkId'
 
-
-module.exports = { createArtwork, getAllArtwork, getArtworkById, deleteArtworkById, updateArtwork };
+module.exports = {
+  createArtwork,
+  getAllArtwork,
+  getArtworkById,
+  deleteArtworkById,
+  updateArtwork,
+};

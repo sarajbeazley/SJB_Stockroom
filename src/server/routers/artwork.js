@@ -9,5 +9,6 @@ router.get("/", getAllArtwork);
 router.get("/:artworkId", getArtworkById);
 router.delete("/:artworkId", deleteArtworkById);
 router.put("/:artworkId", updateArtwork);
+// router.post("/:artworkId/upload-image",uploadArtworkImage);
 
 module.exports = router;

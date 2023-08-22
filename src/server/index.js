@@ -15,8 +15,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
-
 const collectionsRouter = require('./routers/collections');
 app.use('/collections', collectionsRouter);
 
@@ -26,8 +24,6 @@ app.use('/artwork', artworkRouter);
 const loginRouter = require('./controllers/auth');
 app.use('/login', loginRouter);
 
-const adminRouter = require('./controllers/auth');
-app.use('/admin', adminRouter);
 
 // Set up a default "catch all" route to use when someone visits a route
 // that we haven't built

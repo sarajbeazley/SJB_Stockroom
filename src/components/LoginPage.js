@@ -54,11 +54,11 @@ export default function LoginPage() {
 
       navigate('/admin')
       console.log("Redirecting to admin dashboard...");
+//is there a reditrect hook in react or is that the same as navigate?
 
       setUsername("");
       setPassword("");
 
-      // redirect hook should be the last thing i do here
     }
   }
 
