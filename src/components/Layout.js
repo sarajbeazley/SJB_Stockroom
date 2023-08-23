@@ -14,12 +14,12 @@ export default function Layout({ children }) {
         <div className="nav-links">
           
           <p>
-            <Link className="link-text" to="/collections">
+            <Link className="link-text" to="/collections/architectural">
               <p>Architectural</p>
             </Link>
           </p>
           <p>
-          <Link className="link-text" to="/collections">
+          <Link className="link-text" to="/collections/cityscapes">
             <p>Cityscapes</p>
             </Link>
           </p>

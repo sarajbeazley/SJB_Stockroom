@@ -9,7 +9,7 @@ export default function LandingPage() {
       <h1 className="collections-title">Collections</h1>
       <div className="collections-container">
       <div className="home-collection-item">
-      <Link className="link-text" to="/collections">  
+      <Link className="link-text" to="/collections/architectural">  
       <img
           className="collection-image"
           src="/assets/images/architectural/architectural1 copy.png"
@@ -19,7 +19,7 @@ export default function LandingPage() {
         </Link>
         </div>
         <div className="home-collection-item">
-        <Link className="link-text" to="/collections">  
+        <Link className="link-text" to="/collections/cityscapes">  
       <img
           className="collection-image"
           src="/assets/images/cityscapes/Abbey Rd VIII fr.jpg"
