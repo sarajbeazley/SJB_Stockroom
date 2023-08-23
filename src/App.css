@@ -195,8 +195,8 @@ text-decoration: none;
 
 .text-box{
   padding: 10px;
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 300px;
 }
 

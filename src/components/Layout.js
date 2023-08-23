@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <a href="https://www.sarajbeazley.com/" target="_blank">
+      <Link className="link-text" to="/">
         <img
           className="logo"
           src="/assets/images/sjb_stockroom_logo.png"
           alt="sjb-logo"
         />
-      </a>
+      </Link>
       <nav className="nav-bar">
         <div className="nav-links">
-          
           <p>
             <Link className="link-text" to="/collections/architectural">
               <p>Architectural</p>
             </Link>
           </p>
           <p>
-          <Link className="link-text" to="/collections/cityscapes">
-            <p>Cityscapes</p>
+            <Link className="link-text" to="/collections/cityscapes">
+              <p>Cityscapes</p>
             </Link>
           </p>
           <p>
@@ -42,6 +41,11 @@ export default function Layout({ children }) {
         <div className="links-container">
           <p className="item">
             <b>About</b>
+          </p>
+          <p className="item">
+            <a href="https://www.sarajbeazley.com/" target="_blank">
+              <b>Projects</b>
+            </a>
           </p>
           <p className="item">
             <b>FAQ's</b>

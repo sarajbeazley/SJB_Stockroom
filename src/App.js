@@ -100,7 +100,7 @@ function App() {
           <Route path="/collections/:collectionName" element={<Collections collectionsData={collectionsData} />} />
           <Route
             path="/collections/:collectionName/:artworkId"
-            element={<SingleImage />}
+            element={<SingleImage collectionsData={collectionsData} />}
           />
           <Route path="/login" element={<LoginPage />} />
           <Route
