@@ -23,7 +23,9 @@ export default function Layout({ children }) {
             </Link>
           </p>
           <p>
+          <Link className="link-text" to="/collections/figurative">
             <p>Figurative</p>
+            </Link>
           </p>
           <p>
             <p>Interiors</p>
@@ -40,10 +42,12 @@ export default function Layout({ children }) {
       <footer className="footer">
         <div className="links-container">
           <p className="item">
+          <Link className="link-text" to="/about">
             <b>About</b>
+            </Link>
           </p>
           <p className="item">
-            <a href="https://www.sarajbeazley.com/" target="_blank">
+            <a className="no-underline" href="https://www.sarajbeazley.com/" target="_blank">
               <b>Projects</b>
             </a>
           </p>

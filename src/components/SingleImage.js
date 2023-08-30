@@ -25,7 +25,10 @@ export default function SingleImage({ collectionsData }) {
   return (
     <div className="artwork-details">
       <img className="single-image" src={imageUrl} alt={title} />
-      <h2>{title}{","} {date}</h2>
+      <h2>
+        {title}
+        {","} {date}
+      </h2>
       <div className="original-artwork-info">
         <p>Original artwork:</p>
         <p>{medium}</p>

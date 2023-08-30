@@ -8,6 +8,7 @@ import Collections from "./components/Collections";
 import SingleImage from "./components/SingleImage";
 import LoginPage from "./components/LoginPage";
 import AdminDashboard from "./components/AdminDashboard";
+import AboutPage from "./components/AboutPage";
 
 
 import { Routes, Route } from "react-router-dom";
@@ -87,18 +88,18 @@ function App() {
         { id: 206, title: 'Tower Bridge II',date: 2011, size: '50 x 76 cms', medium: 'etching & silkscreen on paper', price: '£250', imageUrl: '/assets/images/cityscapes/Tower Bridge II.jpg' },
       ],
     },
-    // {
-    //   id: 3,
-    //   name: 'Figurative',
-    //   artworks: [
-    //     { id: 201, title: 'Abbey Rd VIII', date: 2018, size: '50 x 50 cms', medium: 'relief print & silkscreen on paper', price: '£175',  imageUrl: '/assets/images/cityscapes/Abbey Rd VIII.jpg' },
-    //     { id: 202, title: 'Grey Flower', date: 2011, size: '70 x 50 cms', medium: 'giclee print & silkscreen on paper', price: '£150', imageUrl: '/assets/images/cityscapes/Grey Flower lr.jpg' },
-    //     { id: 203, title: 'Landing III', date: 2013, size: '55 x 55 cms', medium: 'collograph, silkscreen & watercolour on paper', price: '£225', imageUrl: '/assets/images/cityscapes/Landing III.jpg' },
-    //     { id: 204, title: 'Mongkok I', date: 2010, size: '76 x 56 cms', medium: 'collograph & silkscreen on paper', price: '£250', imageUrl: '/assets/images/cityscapes/Mongkok I LR.jpg' },
-    //     { id: 205, title: 'Streets III', date: 2018, size: '50 x 50 cms',medium: 'relief print & silkscreen on paper', price: '£175', imageUrl: '/assets/images/cityscapes/Sara J Beazley Streets III.jpg' },
-    //     { id: 206, title: 'Tower Bridge II',date: 2011, size: '50 x 76 cms', medium: 'etching & silkscreen on paper', price: '£250', imageUrl: '/assets/images/cityscapes/Tower Bridge II.jpg' },
-    //   ],
-    // },
+    {
+      id: 3,
+      name: 'Figurative',
+      artworks: [
+        { id: 301, title: 'Pink Print', date: 2012, size: '70 x 50 cms', medium: 'etching & silkscreen on paper', price: '£175',  imageUrl: '/assets/images/figurative/Pink Print.jpg' },
+        { id: 302, title: 'Pin Up Girl I', date: 2015, size: '70 x 70 cms', medium: 'giclee print & silkscreen on paper, hand finished with UV paint', price: '£350', imageUrl: '/assets/images/figurative/PinUp Girl I.jpg' },
+        { id: 303, title: 'Shell', date: 2012, size: '70 x 50 cms', medium: 'giclee print & silkscreen on paper', price: '£150', imageUrl: '/assets/images/figurative/Sara_J_Beazley_Shell.jpg' },
+        { id: 304, title: 'Roxie', date: 2012, size: '70 x 50 cms', medium: 'giclee print & silkscreen on paper', price: '£150', imageUrl: '/assets/images/figurative/Sara_J_Bezley_Roxie.jpg' },
+        { id: 305, title: 'Stormy Weather II', date: 2015, size: '70 x 70 cms',medium: 'giclee print & silkscreen on paper, hand finished with UV paint', price: '£350', imageUrl: '/assets/images/figurative/Stormy Weather II.jpg' },
+        { id: 306, title: 'The Shore I',date: 2015, size: '76 x 56 cms', medium: 'photo polymer, relief print & silkscreen on paper', price: '£325', imageUrl: '/assets/images/figurative/The Shore I.jpg' },
+      ],
+    },
 
   ];
 
@@ -118,6 +119,9 @@ function App() {
           <Route
             path="/admin"
             element={!token ? <LoginPage /> : <AdminDashboard /> }
+            />
+            <Route path="/about"
+            element={<AboutPage />}
             />
         </Routes>
       </Layout>
