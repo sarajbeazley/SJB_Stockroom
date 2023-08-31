@@ -33,10 +33,14 @@ export default function Layout({ children }) {
             </Link>
           </p>
           <p>
+          <Link className="link-text" to="/collections/fashion">
             <p>Fashion</p>
+            </Link>
           </p>
           <p>
+          <Link className="link-text" to="/collections/landscapes">
             <p>Landscapes</p>
+            </Link>
           </p>
         </div>
       </nav>

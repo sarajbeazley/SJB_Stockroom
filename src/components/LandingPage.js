@@ -49,20 +49,24 @@ export default function LandingPage() {
         </Link>
         </div>
         <div className="home-collection-item">
+        <Link className="link-text" to="/collections/fashion"> 
       <img
           className="collection-image"
           src="/assets/images/fashion/corset.png"
           alt="fashion"
         />
         <h2>Fashion</h2>
+        </Link>
         </div>
         <div className="home-collection-item">
+        <Link className="link-text" to="/collections/landscapes"> 
       <img
           className="collection-image"
           src="/assets/images/landscapes/Small Steps VIIII fr.jpg"
           alt="small_steps_VIIII"
         />
         <h2>Landscapes</h2>
+        </Link>
         </div>
     </div>
     </div>
