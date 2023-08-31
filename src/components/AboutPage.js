@@ -33,7 +33,7 @@ export default function AboutPage() {
               here
             </a>
           </p>
-          <p className="paragraph">The artwork presented here is a carefully curated selection of original prints designed and hand printed by Sara. All artworks are for sale, the offering will be regularly updated with some available to order as digital prints. </p>
+          <p className="paragraph">The artwork presented here is a carefully curated selection of original prints designed and hand printed by Sara. All artworks are for sale and as works are sold, the offering will be regularly updated with some works available to order as digital prints. </p>
         </div>
        
         <small className="Sara">photo credit: Alun Callender for jaggedart 2023</small>

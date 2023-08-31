@@ -29,20 +29,24 @@ export default function LandingPage() {
         </Link>
         </div>
         <div className="home-collection-item">
+        <Link className="link-text" to="/collections/figurative"> 
       <img
           className="collection-image"
           src="/assets/images/figurative/figurative.png"
           alt="figurative"
         />
         <h2>Figurative</h2>
+        </Link>
         </div>
         <div className="home-collection-item">
+        <Link className="link-text" to="/collections/interiors"> 
       <img
           className="collection-image"
           src="/assets/images/interiors/Chandelier I fr.jpg"
           alt="chandelier_I"
         />
         <h2>Interiors</h2>
+        </Link>
         </div>
         <div className="home-collection-item">
       <img
@@ -50,7 +54,7 @@ export default function LandingPage() {
           src="/assets/images/fashion/corset.png"
           alt="fashion"
         />
-        <h2>Figurative</h2>
+        <h2>Fashion</h2>
         </div>
         <div className="home-collection-item">
       <img

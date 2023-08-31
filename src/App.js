@@ -100,6 +100,28 @@ function App() {
         { id: 306, title: 'The Shore I',date: 2015, size: '76 x 56 cms', medium: 'photo polymer, relief print & silkscreen on paper', price: '£325', imageUrl: '/assets/images/figurative/The Shore I.jpg' },
       ],
     },
+    {
+      id: 4,
+      name: 'Interiors',
+      artworks: [
+        { id: 401, title: 'Bedroom I', date: 2012, size: '56 x 76 cms', medium: 'polymer print, relief print, watercolour & silkscreen on paper', price: '£325',  imageUrl: '/assets/images/interiors/Bedroom I.jpg' },
+        { id: 402, title: 'Chandelier VIII', date: 2019, size: '50 x 36 cms', medium: 'photocopy transfer & relief print on paper', price: '£250', imageUrl: '/assets/images/interiors/Chandelier 8.jpg' },
+        { id: 403, title: 'Chandelier I', date: 2017, size: '50 x 40 cms', medium: 'etching on paper', price: '£150', imageUrl: '/assets/images/interiors/Chandelier I.jpg' },
+        { id: 404, title: 'Dining Room I', date: 2019, size: '40 x 60 cms', medium: 'relief print & silkscreen on paper', price: '£225', imageUrl: '/assets/images/interiors/Dining room 1.jpg' },
+        { id: 405, title: 'Dressing Room II', date: 2019, size: '40 x 60 cms',medium: 'relief print & silkscreen on paper', price: '£225', imageUrl: '/assets/images/interiors/Dressing Room 2.jpg' },
+        { id: 406, title: 'Red Johnston Rd II',date: 2015, size: '76 x 56 cms', medium: 'Silkscreen on paper', price: '£300', imageUrl: '/assets/images/interiors/RedJohnston2edit.jpg' },
+      ],
+    },
+
+    {
+      id: 5,
+      name: 'Fashion',
+      artworks: [
+        { id: 501, title: 'Bedroom I', date: 2012, size: '56 x 76 cms', medium: 'polymer print, relief print, watercolour & silkscreen on paper', price: '£325',  imageUrl: '/assets/images/interiors/Bedroom I.jpg' },
+        { id: 502, title: 'Chandelier VIII', date: 2019, size: '50 x 36 cms', medium: 'photocopy transfer & relief print on paper', price: '£250', imageUrl: '/assets/images/interiors/Chandelier 8.jpg' },
+        { id: 503, title: 'Chandelier I', date: 2017, size: '50 x 40 cms', medium: 'etching on paper', price: '£150', imageUrl: '/assets/images/interiors/Chandelier I.jpg' },
+      ],
+    },
 
   ];
 

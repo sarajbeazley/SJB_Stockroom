@@ -28,7 +28,9 @@ export default function Layout({ children }) {
             </Link>
           </p>
           <p>
+          <Link className="link-text" to="/collections/interiors">
             <p>Interiors</p>
+            </Link>
           </p>
           <p>
             <p>Fashion</p>
