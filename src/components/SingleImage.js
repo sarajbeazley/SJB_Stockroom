@@ -38,9 +38,9 @@ export default function SingleImage({ collectionsData }) {
       <div className="digital-artwork-info">
         <p>Digital print:</p>
         <p>giclee print on paper</p>
-        <p>small (size?) £100</p>
-        <p>medium (size?) £200</p>
-        <p>large (size?) £300</p>
+        <p>small (42 x 42 cms) £100</p>
+        <p>medium (62 x 62 cms) £200</p>
+        <p>large (82 x 82 cms) £300</p>
       </div>
     </div>
   );

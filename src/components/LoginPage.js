@@ -54,7 +54,6 @@ export default function LoginPage() {
 
       navigate('/admin')
       console.log("Redirecting to admin dashboard...");
-//is there a reditrect hook in react or is that the same as navigate?
 
       setUsername("");
       setPassword("");
@@ -68,7 +67,7 @@ export default function LoginPage() {
         Hello Sara! To access the admin dashboard, please enter your details
         below
       </h1>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="login-form" onSubmit={handleSubmit}>
         <div className="input-container">
           <p>Username</p>
           <input

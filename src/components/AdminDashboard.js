@@ -34,7 +34,7 @@ export default function AdminDashboard() {
   function handleSubmit(event) {
     event.preventDefault();
     // console.log("Form Data", formData);
-    // console.log("Uploaded Image", uploadedImage);
+    console.log("Uploaded Image", uploadedImage);
    
     const requestData = {
       ...formData,
@@ -177,7 +177,7 @@ export default function AdminDashboard() {
             </div>
           </div>
 
-          <button className="admin-sign-button" type="submit">
+          <button className="admin-upload-button" type="submit">
             Upload
           </button>
         </form>
