@@ -137,7 +137,7 @@ text-decoration: none;
   color: #282c34;
   place-items: center;
   /* margin-bottom: 10px; */
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .item{
@@ -166,6 +166,7 @@ text-decoration: none;
   justify-content: flex-end;
   align-items: center;
   grid-column: 5;
+  /* margin-top: 20px; */
 }
 
 .admin-sign-button{
@@ -177,7 +178,7 @@ text-decoration: none;
 }
 
 .admin-title{
-  padding-bottom: 140px;
+  padding-bottom: 220px;
   margin-top: 40px
 }
 
@@ -190,7 +191,7 @@ text-decoration: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
 }
 
 .admin-form{
