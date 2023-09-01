@@ -117,9 +117,13 @@ function App() {
       id: 5,
       name: 'Fashion',
       artworks: [
-        { id: 501, title: 'Blue Corset', date: 2005, size: '25 x 15 cms', medium: 'etching on paper', price: '£105',  imageUrl: '/assets/images/fashion/Blue Corset.jpg' },
+        { id: 501, title: 'Blue Corset', date: 2005, size: '29 x 19 cms', medium: 'etching on paper', price: '£105',  imageUrl: '/assets/images/fashion/Blue Corset.jpg' },
         { id: 502, title: 'Shoe', date: 2011, size: '50 x 36 cms', medium: 'drypoint, silkscreen & watercolour on paper', price: '£200', imageUrl: '/assets/images/fashion/Shoe.jpg' },
         { id: 503, title: 'Turquoise Boudoir I', date: 2018, size: '70 x 50 cms', medium: 'embossing, silkscreen & watercolour on paper', price: '£350', imageUrl: '/assets/images/fashion/Turquoise Boudoir I.jpg' },
+        { id: 504, title: 'Necklace', date: 2005, size: '30 x 28 cms', medium: 'etching on paper', price: '£150', imageUrl: '/assets/images/fashion/necklace.jpg' },
+        { id: 505, title: 'Shoes', date: 2011, size: '30 x 37 cms', medium: 'drypoint & silkscreen on paper', price: '£150', imageUrl: '/assets/images/fashion/shoes.jpg' },
+        { id: 506, title: 'Corset', date: 2005, size: '29 x 19 cms', medium: 'etching on paper', price: '£105',  imageUrl: '/assets/images/fashion/corset.jpg' },
+       
       ],
     },
 
