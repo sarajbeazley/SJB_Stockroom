@@ -48,12 +48,12 @@ Here, you can currenly upload artwork details and images to the database (image 
 
 ### Landing Page
 
-<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/LandingPage.png" alt="landing page" height="600" width="500" />
+<img src="LandingPage.png" alt="landing page" height="600" width="500" />
 
 ### Collection Page
 
-<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/CollectionPage.png" height="600" width="500" >
+<img src="CollectionPage.png" alt="collections page" height="600" width="500" />
 
 ### Single Image Page
 
-<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/SingleImage.png" height="600" width="500" >
+<img src="SingleImage.png" alt="single image page" height="600" width="500" />
