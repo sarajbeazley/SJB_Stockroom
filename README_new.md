@@ -30,12 +30,12 @@ To explore the backend functionality and the Admin Dashboard, follow these steps
   Navigate to http://localhost:3000/login
   Here, once logged in with the correct admin credentials you can access the admin dashboard.
 
-  <img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/Login.png" height="600" width="500" >
+  <img src="/assets/images/Login.png" height="600" width="500" >
 
 * Access the Admin Dashboard:
   You can also navigate directly to the admin dashboard using this link http://localhost:3000/admin
 
-  <img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/Admin.png" height="600" width="500" >
+  <img src="/assets/images/Admin.png" height="600" width="500" >
 
 Here, you can currenly upload artwork details and images to the database (image upload still needs to be implemented)
 
