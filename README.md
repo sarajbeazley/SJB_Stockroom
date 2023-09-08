@@ -35,7 +35,7 @@ To explore the backend functionality and the Admin Dashboard, follow these steps
 * Access the Admin Dashboard:
   You can also navigate directly to the admin dashboard using this link <http://localhost:3000/admin>
 
-  <img src="Admin.png" alt="admin" height="600" width="600" />
+  <img src="Admin.png" alt="admin" height="600" width="550" />
 
 Here, you can currenly upload artwork details and images to the database (image upload still needs to be implemented)
 
@@ -48,12 +48,12 @@ Here, you can currenly upload artwork details and images to the database (image 
 
 ### Landing Page
 
-<img src="LandingPage.png" alt="landing page" height="600" width="400" />
+<img src="LandingPage.png" alt="landing page" height="800" width="600" />
 
 ### Collection Page
 
-<img src="CollectionPage.png" alt="collections page" height="600" width="400" />
+<img src="CollectionPage.png" alt="collections page" height="800" width="600" />
 
 ### Single Image Page
 
-<img src="SingleImage.png" alt="single image page" height="600" width="400" />
+<img src="SingleImage.png" alt="single image page" height="800" width="600" />
