@@ -48,12 +48,12 @@ Here, you can currenly upload artwork details and images to the database (image 
 
 ### Landing Page
 
-<img src="LandingPage.png" alt="landing page" height="800" width="550" />
+<img src="LandingPage.png" alt="landing page" height="800" width="500" />
 
 ### Collection Page
 
-<img src="CollectionPage.png" alt="collections page" height="800" width="550" />
+<img src="CollectionPage.png" alt="collections page" height="800" width="500" />
 
 ### Single Image Page
 
-<img src="SingleImage.png" alt="single image page" height="800" width="550" />
+<img src="SingleImage.png" alt="single image page" height="800" width="500" />
