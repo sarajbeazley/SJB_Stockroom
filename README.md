@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# SJB STOCKROOM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Full stack website built using React, CSS and Node.js, Express, Prisma and PostgreSQL for the backend.
 
-## Available Scripts
+## General Info
 
-In the project directory, you can run:
+This is a solo project created over 2 weeks. The MVP consisted of a Landing Page, a route to 6 different Collections as well as an Admin Login page and an Admin Dashboard.
+
+The website has two main purposes:
+
+* Admin Dashboard: This is where admins can manage the artwork database. They can log in to access the dashboard and upload artwork details along with images. The admin dashboard provides an interface to interact with the backend database.
+  
+* Gallery: This section is designed for customers and art enthusiasts. It's a place where users can view and eventually purchase artwork. This part of the website is still under development.
+
+## Getting Started
+
+To run this project, install it locally using npm:
+
+ git clone https://github.com/sarajbeazley/SJB_Stockroom.git cd sjb_stockroom
+  
+### `npm install`
 
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To explore the backend functionality and the Admin Dashboard, follow these steps:
 
-### `npm test`
+* Access via the Login Page:  
+  Navigate to http://localhost:3000/login
+  Here, once logged in with the correct admin credentials you can access the admin dashboard.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <img src="/assets/images/Login.png" height="600" width="500" >
 
-### `npm run build`
+* Access the Admin Dashboard:
+  You can also navigate directly to the admin dashboard using this link http://localhost:3000/admin
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <img src="/assets/images/Admin.png" height="600" width="500" >
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Here, you can currenly upload artwork details and images to the database (image upload still needs to be implemented)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Next Steps
 
-### `npm run eject`
+* Upon upload, images and data will be displayed to the correct page/collection of the website.
+* Add E-Commerce
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## UI Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Landing Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/LandingPage.png" height="600" width="500" >
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Collection Page
 
-## Learn More
+<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/CollectionPage.png" height="600" width="500" >
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Single Image Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="/Users/sjb/BOOLEAN/BACKEND/sjb_stockroom/SingleImage.png" height="600" width="500" >
